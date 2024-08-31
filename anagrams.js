@@ -21,7 +21,7 @@ function anagram(s1, s2) {
     // iterate over string 2
     for (let char of s2) {
 
-        if (!(p1[char])) return false // check if letter of s2 is in p1 and if the count of the current character in p1 has reached 0. (read as if true, return false)
+        if (!(p1[char])) return false // read as if true, return false. Only 0 and undefined will return true in this case
         else p1[char] -= 1
 
     }
